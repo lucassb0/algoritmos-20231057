@@ -1,6 +1,13 @@
-let nomeDeUsuario = parseFloat(prompt(`Digite o seu nome de usuário`));
-let senha = parseFloat(prompt(`Digite a sua senha`))
-let invalido = isNaN(nomeDeUsuario) || nomeDeUsuario = senha;
+let nome = parseInt(prompt(`Digite o seu nome`));
+let senha = parseInt(prompt(`Digite sua senha`));
 
-for (let i = 0 ; nomeDeUsuario == senha ; i++)
-    alert(`não é permitido senha igual a nome de usuário`)
+for (let i = 0 ; i < 5 ; i++) {
+    if (nome == senha) {
+        break
+        alert(`O nome não pode ser igual a senha`);
+
+    }
+    senha = prompt(`Digite sua senha`);
+    (nome !== senha);
+    alert(`tudo certo`)
+}
